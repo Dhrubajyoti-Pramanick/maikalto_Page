@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.room-search {
+    background-image: url("../images/house.jpeg");
+    background-size: cover;
+}
+.navbar, .nav-items,.lang, label, .covid{
+    color: #000062;
+}
+.navbar,.lang, .covid {
+    font-size: 13px;
+    
+}
+.nav-group li {
+    list-style: none;
+}
+#shop {
+    max-width: 20px;
+}
+.avail {
+    color: white;
+    background-color: #000062;
+}
+.visibility {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .visibility{
+        display: block;
+    }
+    .menu {
+        display: none !important;
+    }
+}
+.welcomeNote {
+    text-align: justify;
+}
+.swiper {
+    background-color: #000062;
+}
+.bed {
+    width: 50%;
+}

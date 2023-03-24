@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mikalto HomePage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav class="navbar d-flex justify-content-between mt-2 mx-5">
+      <div class="text-center">
+        <div class="fs-1">MIKALTO</div>
+        <div>HOTELS & RESORTS</div>
+      </div>
+      <div class="mt-4 visibility">
+        <ul class="nav-group d-flex gap-3">
+          <li>
+            <a class="nav-items text-decoration-none" href="#" target="_blank"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="nav-items text-decoration-none" href="#" target="_blank"
+              >Our Rooms</a
+            >
+          </li>
+          <li>
+            <a class="nav-items text-decoration-none" href="#" target="_blank"
+              >Page</a
+            >
+          </li>
+          <li>
+            <a class="nav-items text-decoration-none" href="#" target="_blank"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a class="nav-items text-decoration-none" href="#" target="_blank"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a class="nav-items text-decoration-none" href="#" target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mt-2 visibility">
+        <select name="language" id="language" class="lang btn">
+          <option value="english">EN</option>
+          <option value="french">FR</option>
+          <option value="spanish">SP</option>
+          <option value="russian">RS</option>
+          <option value="german">GR</option>
+        </select>
+        <a href="#" target="_blank"
+          ><img id="shop" src="./images/shoppingBag.svg" alt="shop"
+        /></a>
+      </div>
+      <i class="fa-solid fa-bars menu" id="menu"></i>
+    </nav>
+    <!-- section 1 -->
+    <section class="room-search d-flex gap-5 mx-4" id="room">
+      <div class="offset-1 col-3 text-white mt-5 pt-5">
+        <div class="fs-2">Enjoy your dream vacation</div>
+        <div>Quiet and endlessly beautiful hideway</div>
+        <div>
+          <button class="btn bg-white">
+            <a href="#" class="text-dark text-decoration-none">About Us</a>
+          </button>
+
+          <a href="#" class="ps-3 text-white text-decoration-none"
+            >View HomeStay--></a
+          >
+        </div>
+      </div>
+      <div class="offset-1 col-3 bg-white p-4 my-4">
+        <h3>Search Room</h3>
+        <a href="#" class="covid text-decoration-none"
+          >Get the latest on our COVID-19 response</a
+        >
+        <form>
+          <div class="d-flex pt-4">
+            <div class="d-flex flex-column">
+              <label for="checkIn">Checkin<sup>*</sup></label>
+              <input type="date" id="checkIn" />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="checkOut">Checkout<sup>*</sup></label>
+              <input type="date" id="checkOut" />
+            </div>
+          </div>
+          <div class="d-flex flex-column pt-4">
+            <label for="adults">Adults</label>
+            <select name="adults" id="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="d-flex flex-column pt-4">
+            <label for="children">Children</label>
+            <select name="children" id="adults">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="d-flex flex-column mt-3">
+            <button class="avail btn">Check Availability</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="mt-5 d-flex justify-content-between mx-5">
+      <div class="offset-1 col-3">
+        <div class="lang">WELCOME TO</div>
+        <div>The Mikalto Luxury & Comfort Homestay</div>
+        <p class="welcomeNote">
+          Welcome to our five-star hotel in Puerto de la Cruz's old town. A
+          marvellous combination of architecture, design and comtemporary art.
+          32 rooms and 10 uniquely different suites ensure our guests' stay is
+          extra special.
+        </p>
+        <div>MELINDA AMANDA - HOTEL MANAGER</div>
+      </div>
+      <div>
+        <img class="w-75" src="./images/barbeque.jpeg" alt="barbeque" />
+      </div>
+    </section>
+    <!-- section 3 -->
+    <section class="mt-5 d-flex">
+      <div class="swiper col-3 text-white p-5">
+        <div>ELEGANCE AND COMFORT</div>
+        <div>STANDARD ROOM</div>
+        <div>From:$150/night</div>
+        <div>
+          With wide and comfortable areas and daylight pouring in from the...
+        </div>
+        <div class="row">
+          <div class="col">Bed:</div>
+          <div class="col">Queen Size Bed</div>
+        </div>
+        <div class="row">
+          <div class="col">Capacity:</div>
+          <div class="col">2 adults, 1 children</div>
+        </div>
+        <div class="row">
+          <div class="col">Room size:</div>
+          <div class="col">55 sqm</div>
+        </div>
+        <div class="row">
+          <div class="col">View:</div>
+          <div class="col">Garden view</div>
+        </div>
+        <button class="btn avail border-white mt-4">View Detail</button>
+      </div>
+      <div class="col-10">
+        <img class="bed" src="./images/bedroom.jpeg" alt="bedroom" />
+      </div>
+    </section>
+  </body>
+</html>

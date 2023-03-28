@@ -1,182 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mikalto HomePage</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- nav section -->
-    <nav class="navbar d-flex justify-content-between mt-2 mx-5">
-      <div class="text-center">
-        <div class="fs-1">MIKALTO</div>
-        <div>HOTELS & RESORTS</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mikalto HomePage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- section 1 nav -->
+  <nav class="navbar d-flex justify-content-between mt-2 mx-5">
+    <div class="text-center">
+      <div class="fs-1">MIKALTO</div>
+      <div>HOTELS & RESORTS</div>
+    </div>
+    <div class="mt-4 visibility">
+      <ul class="nav-group d-flex gap-3">
+        <li>
+          <a class="nav-items text-decoration-none" href="#" target="_blank">Home</a>
+        </li>
+        <li>
+          <a class="nav-items text-decoration-none" href="#" target="_blank">Our Rooms</a>
+        </li>
+        <li>
+          <a class="nav-items text-decoration-none" href="#" target="_blank">Page</a>
+        </li>
+        <li>
+          <a class="nav-items text-decoration-none" href="#" target="_blank">Features</a>
+        </li>
+        <li>
+          <a class="nav-items text-decoration-none" href="#" target="_blank">Blog</a>
+        </li>
+        <li>
+          <a class="nav-items text-decoration-none" href="#" target="_blank">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-2 visibility">
+      <select name="language" id="language" class="lang btn">
+        <option value="english">EN</option>
+        <option value="french">FR</option>
+        <option value="spanish">SP</option>
+        <option value="russian">RS</option>
+        <option value="german">GR</option>
+      </select>
+      <a href="#" target="_blank"><img id="shop" src="./images/shoppingBag.svg" alt="shop" /></a>
+    </div>
+    <i class="fa-solid fa-bars menu" id="menu"></i>
+  </nav>
+  <!-- section 2 search room -->
+  <section class="room-search d-flex flex-column flex-md-row gap-5 mx-4" id="room">
+    <div class="offset-1 col-12 col-md-3 text-white mt-5 pt-5">
+      <div class="fs-2">Enjoy your dream vacation</div>
+      <div>Quiet and endlessly beautiful hideway</div>
+      <div>
+        <button class="btn bg-white">
+          <a href="#" class="text-dark text-decoration-none">About Us</a>
+        </button>
+
+        <a href="#" class="ps-3 text-white text-decoration-none">View HomeStay →</a>
       </div>
-      <div class="mt-4 visibility">
-        <ul class="nav-group d-flex gap-3">
-          <li>
-            <a class="nav-items text-decoration-none" href="#" target="_blank"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a class="nav-items text-decoration-none" href="#" target="_blank"
-              >Our Rooms</a
-            >
-          </li>
-          <li>
-            <a class="nav-items text-decoration-none" href="#" target="_blank"
-              >Page</a
-            >
-          </li>
-          <li>
-            <a class="nav-items text-decoration-none" href="#" target="_blank"
-              >Features</a
-            >
-          </li>
-          <li>
-            <a class="nav-items text-decoration-none" href="#" target="_blank"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a class="nav-items text-decoration-none" href="#" target="_blank"
-              >Contact</a
-            >
-          </li>
+    </div>
+    <div class="offset-1 col-10 col-md-3 bg-white p-4 my-4">
+      <h3>Search Room</h3>
+      <a href="#" class="covid text-decoration-none">Get the latest on our COVID-19 response</a>
+      <form>
+        <div class="d-flex flex-column flex-md-row pt-4">
+          <div class="d-flex flex-column">
+            <label for="checkIn">Checkin<sup>*</sup></label>
+            <input type="date" id="checkIn" />
+          </div>
+          <div class="d-flex flex-column">
+            <label for="checkOut">Checkout<sup>*</sup></label>
+            <input type="date" id="checkOut" />
+          </div>
+        </div>
+        <div class="d-flex flex-column pt-4">
+          <label for="adults">Adults</label>
+          <select name="adults" id="adults">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column pt-4">
+          <label for="children">Children</label>
+          <select name="children" id="adults">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="d-flex flex-column mt-3">
+          <button class="avail btn">Check Availability</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- section 3 welcome note-->
+  <section class="mt-5 d-flex flex-column flex-md-row justify-content-between mx-5">
+    <div class="offset-md-1 col-md-3">
+      <div class="lang">WELCOME TO</div>
+      <div>The Mikalto Luxury & Comfort Homestay</div>
+      <p class="welcomeNote">
+        Welcome to our five-star hotel in Puerto de la Cruz's old town. A
+        marvellous combination of architecture, design and comtemporary art.
+        32 rooms and 10 uniquely different suites ensure our guests' stay is
+        extra special.
+      </p>
+      <div>
+        <img class="signature" src="./images/signature.svg" alt="signature" />
+      </div>
+      <div>MELINDA AMANDA - HOTEL MANAGER</div>
+    </div>
+    <div>
+      <img class="w-75" src="./images/barbeque.jpeg" alt="barbeque" />
+    </div>
+  </section>
+  <!-- section 4 carousel-->
+  <section class="mt-5 d-flex flex-column flex-md-row">
+    <div class="swiper col-md-3 text-white p-5">
+      <div>ELEGANCE AND COMFORT</div>
+      <div>STANDARD ROOM</div>
+      <div>From:$150/night</div>
+      <div>
+        With wide and comfortable areas and daylight pouring in from the...
+      </div>
+      <div class="row">
+        <div class="col">Bed:</div>
+        <div class="col">Queen Size Bed</div>
+      </div>
+      <div class="row">
+        <div class="col">Capacity:</div>
+        <div class="col">2 adults, 1 children</div>
+      </div>
+      <div class="row">
+        <div class="col">Room size:</div>
+        <div class="col">55 sqm</div>
+      </div>
+      <div class="row">
+        <div class="col">View:</div>
+        <div class="col">Garden view</div>
+      </div>
+      <button class="btn avail border-white mt-4">View Detail</button>
+    </div>
+    <div class="col-md-9">
+      <img class="bed img-fluid" src="./images/bedroom.jpeg" alt="bedroom" />
+    </div>
+  </section>
+  <!-- section 5 features of hotel-->
+  <section>
+    <h2 class="offset-2">Why choose our hostel?</h2>
+    <div class="d-flex justify-content-center flex-column flex-md-row">
+      <div class="d-flex col-9 offset-1 offset-md-0 col-md-3 flex-row">
+        <img src="./images/cuisine.jpg" class="section4Img" alt="cuisine" />
+        <div>
+          <p class="fs-4">Unique Cuisine</p>
+          <p>
+            We use the best ingredients to make special and really tasty
+            dishes. Choose what you want to eat everyday. You order at the
+            moment
+          </p>
+        </div>
+      </div>
+      <div class="d-flex col-9 offset-1 offset-md-0 col-md-3 flex-row">
+        <img src="./images/yoga.jpg" class="section4Img" alt="yoga" />
+        <div>
+          <p class="fs-4">Yoga & Gym</p>
+          <p>
+            Sauna and solarium, a fitness corner, bicycles and Mikalto Walking
+            poles available. To stay in shape especially on vacation.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex col-9 offset-1 offset-md-0 col-md-3 flex-row">
+        <img src="./images/location.jpg" class="section4Img" alt="house_location" />
+        <div>
+          <p class="fs-4">Perfect Location</p>
+          <p>
+            The hotel is located near some of the most beautiful sandy
+            beaches. This is the hotel to book if you plan to spend a great
+            deal of time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 6 other activities-->
+  <section>
+    <div class="row avail d-flex flex-column flex-md-row">
+      <div class="col-10 offset-1 col-md-6 offset-md-0">
+        <p>OTHER ACTIVITIES</p>
+        <h2>Give yourself a smile- Smile & Wellness</h2>
+        <p>
+          Proin nec leo vel metus faucibus vehicula. Donec vulputate in magna
+          eget egestas. Aliquam ac facilisis ante, sit amet tincidunt ante.
+          Fusce dolor sapien, sodales at velit non, lobortis volupate ante.
+          Integer porta molestie volupat. Etiam tristique, sem vitae tincidunt
+          gravida, eros nulla dapibus lacus, ut dapibus diam dui vel tortor.
+        </p>
+        <a href="#" target="_blank" class="avail text-decoration-none">Explore More →</a>
+      </div>
+      <div class="col-10 offset-1 col-md-6 offset-md-0">
+        <img class="img-fluid" src="./images/swimmingPool.jpeg" alt="swimmingPool" />
+      </div>
+    </div>
+    <div class="row avail">
+      <div class="col-10 offset-1 col-md-6 offset-md-0">
+        <img class="img-fluid" src="./images/swimmingPool.jpeg" alt="swimmingPool" />
+      </div>
+      <div class="col-10 offset-1 col-md-6 offset-md-0">
+        <p>RECONNECT WITH NATURE</p>
+        <h2>Experience a truly unforgettable holiday</h2>
+        <p>
+          The wilderness and authencity of this tiny village nestled between
+          steep mountain cliffs and miles of beautiful beaches drew foreign
+          visitors like a magnet.
+        </p>
+
+        <ul>
+          <li>Thermal water with ancient baths</li>
+          <li>Turkish bath</li>
+          <li>Turkish sauna</li>
+          <li>Relax and therapy massage</li>
+        </ul>
+        <a href="#" target="_blank" class="btn border-white avail text-decoration-none">Book your stay</a>
+      </div>
+    </div>
+  </section>
+  <!-- section 7 experience-->
+  <section>
+    <p class="text-center">EXPERIENCE MATTERS</p>
+    <h2 class="text-center">
+      Escape from the World see the experience before you <br />
+      feel it. Discover the luxury of Hotel Mikalto
+    </h2>
+    <div class="row">
+      <div class="col-10 offset-1 col-md-2 offset-md-2">
+        <img class="img-fluid" src="./images/wellness.jpeg" alt="wellness" />
+        <p>WELLNESS</p>
+        <h4>Dedicated to wellness</h4>
+        <p>
+          Aman's approach to wellness is focused on personalisation, privacy
+          and seclusion. Local spa rituals with indigenous ingredients, offer
+          a profoundly therapeutic touch, and a gentle sense of discovery.
+        </p>
+        <a href="#" target="_blank">Discover more →</a>
+      </div>
+      <div class="col-10 offset-1 col-md-2 offset-md-2">
+        <img class="img-fluid" src="./images/adventure.jpeg" alt="adventure" />
+        <p>GIFT CARDS</p>
+        <h4>The gift of future travel</h4>
+        <p>
+          Share extraordinary experiences with Aman E-Gift Card - delivered
+          instantly and offering memories that last a lifetime.
+        </p>
+        <a href="#" target="_blank">Discover more →</a>
+      </div>
+      <div class="col-10 offset-1 col-md-2 offset-md-2">
+        <img class="img-fluid" src="./images/spa.jpeg" alt="spa" />
+        <p>MIKALTO SHOP</p>
+        <h4>The spa experience from home</h4>
+        <p>
+          Skincare and Spa supplements harness powerful natural ingredients to
+          provide balance and optimal wellbeing.
+        </p>
+        <a href="#" target="_blank">Discover more →</a>
+      </div>
+      <div class="col-10 offset-1 col-md-2 offset-md-2">
+        <img class="img-fluid" src="./images/travel.jpeg" alt="wellness" />
+        <p>EXPERIENCE</p>
+        <h4>Adventures in the Wild</h4>
+        <p>
+          Skincare and Spa supplements harness powerful natural ingredients to
+          provide balance and optimal wellbeing.
+        </p>
+        <a href="#" target="_blank">Discover more →</a>
+      </div>
+    </div>
+    <a href="#" target="_blank" class="btn view offset-3 offset-md-5">View all services</a>
+  </section>
+  <!-- section 8 new you-->
+  <section class="sayHello py-5 my-5">
+    <div class="col-10 offset-1 col-md-3 offset-md-7 bg-white p-5">
+      <h3>
+        Say hello <br />
+        to a whole new you
+      </h3>
+      <p>
+        Proin nec leo vel metus faucibus vehicula. Donec vulputate in magna
+        eget egestas. Aliquam ac facilisis ante, sit amet tincidunt ante.
+        Fusce dolor sapien.
+      </p>
+      <a href="#" target="_blank">Discover more →</a>
+    </div>
+  </section>
+  <!-- section 9 customer review-->
+  <section class="d-flex flex-column flex-md-row justify-content-center gap-5">
+    <div class="col-10 offset-1 col-md-3 offset-md-0">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img class="owl" src="./images/section8_img1.png" alt="lady" />
+          <p>
+            Selena Mayer <br />
+            2021-01-10
+          </p>
+        </div>
+        <img class="owl" src="./images/owl.jpeg" alt="travelOwl" />
+      </div>
+      <div>
+        <p>Wonderful new year trip</p>
+        <p>
+          "One of the best hotels I've ever stayed in. The staff are very
+          friendly and helpful, they were so helpful it made me feel bad. It
+          includes use of the Spa, wonderful, it has a...
+        </p>
+      </div>
+    </div>
+    <div class="col-10 offset-1 col-md-3 offset-md-0">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img class="owl" src="./images/section8_img2.png" alt="man" />
+          <p>
+            Esther Howard <br />
+            2021-01-10
+          </p>
+        </div>
+        <img class="owl" src="./images/owl.jpeg" alt="travelOwl" />
+      </div>
+      <div>
+        <p>Recommended</p>
+        <p>
+          Great resort, professional staffs". It turns out that you're
+          searching for paradise and you have it here, nearby. Thanks for the
+          warmth, you are fantastic.
+        </p>
+      </div>
+    </div>
+    <div class="col-10 offset-1 col-md-3 offset-md-0">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img class="owl" src="./images/section8_img3.png" alt="man" />
+          <p>
+            Jane Cooper <br />
+            2021-01-10
+          </p>
+        </div>
+        <img class="owl" src="./images/owl.jpeg" alt="travelOwl" />
+      </div>
+      <div>
+        <p>All good</p>
+        <p>
+          "I love the Resort and its environment. Mikalto is incredibly
+          dedicated, knowledgeable and helpful. The finished product was
+          beautiful every penny...
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- section 10 map -->
+  <section>
+    <div class="row d-flex justify-content-center gap-3">
+      <div class="col-10 offset-1 col-md-5 offset-md-0">
+        <img src="./images/flower.svg" alt="flower" />
+        <p>GETTING HERE</p>
+        <h3>How to get there?</h3>
+        <p>
+          Cras vel sapien erat. Proin molestie malesuada sem, nec euismod
+          metus luctus in. Aliquam eget nibh quis leo tempor congue. Integer
+          accumsan sollicitudin vehicula
+        </p>
+        <div class="d-flex">
+          <img src="./images/plane.svg" alt="" />
+          <div>
+            <p>By plane</p>
+            <p>
+              Donec ornare orci sit amet laoreet imperdiet. Sed lacus lorem,
+              pretium id efficitur eu, laoreet quis urna
+            </p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <img src="./images/bus.svg" alt="" />
+          <div>
+            <p>By bus</p>
+            <p>
+              Ut convallis eleifend arcu, eu tempor enim molestie vel.
+              Curabitur interdum ipsum quis metus aliquam cursus.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <img src="./images/car.svg" alt="" />
+          <div>
+            <p>By car</p>
+            <p>
+              Proin nec leo vel metus faucibus vehicula. Donec vulputate in
+              magna eget egestas. Aliquam ac facilisis ante, sit amet.
+            </p>
+          </div>
+        </div>
+        <a href="#" target="_blank">Discover more →</a>
+      </div>
+      <div class="col-10 col-md-6 offset-md-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.043901925615!2d88.42922191494593!3d22.57746128518026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1679986214593!5m2!1sen!2sin"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- section 11 spa and wellness -->
+  <section>
+    <div class="row">
+      <div class="col">
+        <div class="d-flex gap-3">
+          <img class="bridge col-6" src="./images/wire-bridge.jpeg" alt="bridge" />
+          <div class="d-flex flex-column justify-content-between col-5">
+            <img class="img-fluid" src="./images/home-jungle.jpeg" alt="homeJungle" />
+            <img class="img-fluid" src="./images/lady-leaves.jpeg" alt="lady-leaves" />
+          </div>
+        </div>
+      </div>
+      <div class="col text-center mt-5 pt-5">
+        <div class="col-7 offset-2">
+          <p>SPA & WELLNESS</p>
+          <h3>Side by Side with Nature</h3>
+          <p>
+            Find harmony and balance from the inside out and outside in.
+            Laborum accusantium libero commodi id officiis itaque esse
+            adipisci, necessiatibus asperiores, illo odio.
+          </p>
+          <a href="#" target="_blank" class="btn avail">Join Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 12 subscribe to mail -->
+  <section class="text-center">
+    <p>STORIES DELIVERED STRAIGHT</p>
+    <h3>Get News & Update to Your Inbox</h3>
+    <div class="">
+      <input type="email" placeholder="Enter your email address" />
+      <button class="btn avail">Subscribe</button>
+      <p>
+        Will be used in accordance with our <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </section>
+  <!-- section 13 footer -->
+  <section class="avail">
+    <div class="row mx-5">
+      <div class="col">
+        <h3>MIKALTO</h3>
+        <p>HOTELS AND RESORTS</p>
+        <p>
+          Duis vitae nulla at nisl finibus pharetra. Nunc porttitor sapien
+          quis euismod sodales. Nullam in ipsum nibh.
+        </p>
+        <div>
+          Follow us:
+          <a href="#" target="_blank"><img class="socialLogo" src="./images/facebook.svg" alt="facebook"/></a>
+          <a href="#" target="_blank"><img class="socialLogo" src="./images/twitter.svg" alt="twitter"/></a>
+          <a href="#" target="_blank"><img class="socialLogo" src="./images/instagram.svg" alt="instagram"/></a>
+          <a href="#" target="_blank"><img class="socialLogo" src="./images/youtube.svg" alt="youtube"/></a>
+          <a href="#" target="_blank"><img class="socialLogo" src="./images/pinterest.svg" alt="pinterest"/></a>
+        </div>
+      </div>
+      <div class="col">
+        <p>About</p>
+        <ul>
+          <li><a href="#" target="_blank">About us</a></li>
+          <li><a href="#" target="_blank">Careers</a></li>
+          <li><a href="#" target="_blank">Contact us</a></li>
+          <li><a href="#" target="_blank">Blog</a></li>
+          <li><a href="#" target="_blank">Gift Cards</a></li>
         </ul>
       </div>
-      <div class="mt-2 visibility">
-        <select name="language" id="language" class="lang btn">
+      <div class="col">
+        <p>Services</p>
+        <ul>
+          <li><a href="#" target="_blank">Spa</a></li>
+          <li><a href="#" target="_blank">Experience</a></li>
+          <li><a href="#" target="_blank">Weddings</a></li>
+          <li><a href="#" target="_blank">Dining</a></li>
+          <li><a href="#" target="_blank">Event</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <p>Quick Links</p>
+        <ul>
+          <li><a href="#" target="_blank">Facilities</a></li>
+          <li><a href="#" target="_blank">Accomodation</a></li>
+          <li><a href="#" target="_blank">Reservation</a></li>
+          <li><a href="#" target="_blank">Why Choose Us </a></li>
+          <li><a href="#" target="_blank">Our Restuarant</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <p>Contact Us</p>
+        <ul>
+          <li><a href="#" target="_blank">Total free Customer Support</a></li>
+          <li>(+123)1500-456-7890</li>
+          <li>
+            <a href="#" target="_blank"><br />Need Live support?</a>
+          </li>
+          <li>reservation@mikalto.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between border-top border-1 border-white mx-5">
+      <ul class="d-flex gap-3 p-0">
+        <li>Copyright © 2022 Mikalto JWS.</li>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Sitemap</li>
+      </ul>
+      <div>
+        <a href="#" target="_blank"><img class="globe" src="./images/globe.svg" alt="globe" /></a>
+        <select name="language" id="language" class="btn avail">
           <option value="english">EN</option>
           <option value="french">FR</option>
           <option value="spanish">SP</option>
           <option value="russian">RS</option>
           <option value="german">GR</option>
         </select>
-        <a href="#" target="_blank"
-          ><img id="shop" src="./images/shoppingBag.svg" alt="shop"
-        /></a>
       </div>
-      <i class="fa-solid fa-bars menu" id="menu"></i>
-    </nav>
-    <!-- section 1 -->
-    <section class="room-search d-flex gap-5 mx-4" id="room">
-      <div class="offset-1 col-3 text-white mt-5 pt-5">
-        <div class="fs-2">Enjoy your dream vacation</div>
-        <div>Quiet and endlessly beautiful hideway</div>
-        <div>
-          <button class="btn bg-white">
-            <a href="#" class="text-dark text-decoration-none">About Us</a>
-          </button>
+    </div>
+  </section>
+</body>
 
-          <a href="#" class="ps-3 text-white text-decoration-none"
-            >View HomeStay--></a
-          >
-        </div>
-      </div>
-      <div class="offset-1 col-3 bg-white p-4 my-4">
-        <h3>Search Room</h3>
-        <a href="#" class="covid text-decoration-none"
-          >Get the latest on our COVID-19 response</a
-        >
-        <form>
-          <div class="d-flex pt-4">
-            <div class="d-flex flex-column">
-              <label for="checkIn">Checkin<sup>*</sup></label>
-              <input type="date" id="checkIn" />
-            </div>
-            <div class="d-flex flex-column">
-              <label for="checkOut">Checkout<sup>*</sup></label>
-              <input type="date" id="checkOut" />
-            </div>
-          </div>
-          <div class="d-flex flex-column pt-4">
-            <label for="adults">Adults</label>
-            <select name="adults" id="adults">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <div class="d-flex flex-column pt-4">
-            <label for="children">Children</label>
-            <select name="children" id="adults">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-          <div class="d-flex flex-column mt-3">
-            <button class="avail btn">Check Availability</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- section 2 -->
-    <section class="mt-5 d-flex justify-content-between mx-5">
-      <div class="offset-1 col-3">
-        <div class="lang">WELCOME TO</div>
-        <div>The Mikalto Luxury & Comfort Homestay</div>
-        <p class="welcomeNote">
-          Welcome to our five-star hotel in Puerto de la Cruz's old town. A
-          marvellous combination of architecture, design and comtemporary art.
-          32 rooms and 10 uniquely different suites ensure our guests' stay is
-          extra special.
-        </p>
-        <div>MELINDA AMANDA - HOTEL MANAGER</div>
-      </div>
-      <div>
-        <img class="w-75" src="./images/barbeque.jpeg" alt="barbeque" />
-      </div>
-    </section>
-    <!-- section 3 -->
-    <section class="mt-5 d-flex">
-      <div class="swiper col-3 text-white p-5">
-        <div>ELEGANCE AND COMFORT</div>
-        <div>STANDARD ROOM</div>
-        <div>From:$150/night</div>
-        <div>
-          With wide and comfortable areas and daylight pouring in from the...
-        </div>
-        <div class="row">
-          <div class="col">Bed:</div>
-          <div class="col">Queen Size Bed</div>
-        </div>
-        <div class="row">
-          <div class="col">Capacity:</div>
-          <div class="col">2 adults, 1 children</div>
-        </div>
-        <div class="row">
-          <div class="col">Room size:</div>
-          <div class="col">55 sqm</div>
-        </div>
-        <div class="row">
-          <div class="col">View:</div>
-          <div class="col">Garden view</div>
-        </div>
-        <button class="btn avail border-white mt-4">View Detail</button>
-      </div>
-      <div class="col-10">
-        <img class="bed" src="./images/bedroom.jpeg" alt="bedroom" />
-      </div>
-    </section>
-  </body>
 </html>

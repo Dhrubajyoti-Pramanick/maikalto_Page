@@ -2,12 +2,19 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+li {
+    list-style:none;
+}
 .room-search {
     background-image: url("../images/house.jpeg");
     background-size: cover;
 }
 .navbar, .nav-items,.lang, label, .covid{
     color: #000062;
+}
+.view {
+    color: #000062;
+    border: 1px solid #000062 ;
 }
 .navbar,.lang, .covid {
     font-size: 13px;
@@ -26,7 +33,7 @@ body {
 .visibility {
     display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .visibility{
         display: block;
     }
@@ -34,12 +41,36 @@ body {
         display: none !important;
     }
 }
+.signature {
+    width: 13rem;
+    height: 4rem;
+}
 .welcomeNote {
     text-align: justify;
 }
 .swiper {
     background-color: #000062;
 }
-.bed {
+/* .bed {
     width: 50%;
+} */
+.socialLogo {
+    width: 1rem;
+}
+/* section 4 */
+.section4Img {
+    height: 5rem;
+    width: 5rem;
+}
+/* section 7 */
+.sayHello {
+    background-image: url("../images/swimming.png");
+}
+/* section-8 */
+.owl {
+    width: 3rem;
+    height: 3rem;
+}
+.globe {
+    width: 1rem;
 }

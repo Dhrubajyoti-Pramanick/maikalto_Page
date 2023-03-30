@@ -1,6 +1,20 @@
-let menuButton = document.getElementsByClassName('nav-group')
-document.getElementById('menu').addEventListener('click',()=>{
-    for(let i=0;i<menuButton.length;i++){
-        menuButton[i].classList.visibility = block;
-    }
-})
+let swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+//data fetch
+async function getServerData() {
+    const response = await fetch(
+        `http://localhost:8000`
+      ).then(function (res) {
+        console.log(res);
+        return res.json();
+      });
+      console.log(response);
+    //   document.getElementById("vacation").innerHTML = response.section2.text;
+}
+
+
+// getServerData();

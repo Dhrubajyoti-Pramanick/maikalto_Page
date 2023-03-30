@@ -1,8 +1,27 @@
 {
-    "section2" : {
-        "text" : "Not enjoy your dream vacation"
+    "searchRoom" : {
+        "img" : "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg"
     },
-    "section3" : {
-        "text" : "NOT WELCOME TO"
+    "welcomeNote" : {
+        "img1" : "https://images.pexels.com/photos/6775268/pexels-photo-6775268.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "img2" : "https://images.pexels.com/photos/2468773/pexels-photo-2468773.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "img3" : "https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    "carousel" : {
+        "carousel1" : {
+            "roomType" : "STANDARD ROOM",
+            "price" : "From: $150/night",
+            "img" : "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        "carousel2" : {
+            "roomType" : "PREMIUM ROOM",
+            "price" : "From: $250/night",
+            "img" : "https://images.pexels.com/photos/90319/pexels-photo-90319.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        "carousel3" : {
+            "roomType" : "LUXURY ROOM",
+            "price" : "From: $350/night",
+            "img" : "https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&w=800"
+        }
     }
 }

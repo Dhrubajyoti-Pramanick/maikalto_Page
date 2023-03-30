@@ -17,8 +17,6 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-
 </head>
 
 <body>
@@ -67,7 +65,7 @@
       </div>
     </div>
   </nav>
-  <!-- section 2 search room -->
+  <!-- section 2 searchRoom -->
   <section class="room-search d-flex flex-column flex-md-row gap-5 mx-4" id="room">
     <div class="offset-1 col-12 col-md-3 text-white mt-5 pt-5">
       <div class="fs-2" id="vacation">Enjoy your dream vacation</div>
@@ -87,16 +85,17 @@
         <div class="d-flex flex-column flex-xl-row pt-4">
           <div class="d-flex flex-column">
             <label for="checkIn">Checkin<sup>*</sup></label>
-            <input type="date" id="checkIn" />
+            <input type="date" id="checkIn"/>
           </div>
           <div class="d-flex flex-column">
             <label for="checkOut">Checkout<sup>*</sup></label>
-            <input type="date" id="checkOut" />
+            <input type="date" id="checkOut"/>
           </div>
         </div>
         <div class="d-flex flex-column pt-4">
           <label for="adults">Adults</label>
           <select name="adults" id="adults">
+            <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -105,20 +104,21 @@
         </div>
         <div class="d-flex flex-column pt-4">
           <label for="children">Children</label>
-          <select name="children" id="adults">
+          <select name="children" id="children">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
+            <option value="4">4</option>
           </select>
         </div>
         <div class="d-flex flex-column mt-3">
-          <button class="avail btn">Check Availability</button>
+          <button class="avail btn" id="submit" onclick="formSubmit(event)">Check Availability</button>
         </div>
       </form>
     </div>
   </section>
-  <!-- section 3 welcome note-->
+  <!-- section 3 welcomeNote-->
   <section class="mt-5 d-flex flex-column flex-md-row justify-content-between mx-5">
     <div class="offset-md-1 col-md-3">
       <div class="lang">WELCOME TO</div>
@@ -135,15 +135,17 @@
       <div>MELINDA AMANDA - HOTEL MANAGER</div>
     </div>
     <div>
-      <img class="w-75" src="./images/barbeque.jpeg" alt="barbeque" />
+      <div id="welcomeNoteImg1"></div>
+      <div id="welcomeNoteImg2"></div>
+      <div id="welcomeNoteImg3"></div>
     </div>
   </section>
   <!-- section 4 carousel-->
   <section class="mt-5 d-flex flex-column flex-md-row">
     <div class="carousel col-md-5 text-white p-5">
       <div>ELEGANCE AND COMFORT</div>
-      <div>STANDARD ROOM</div>
-      <div>From:$150/night</div>
+      <div id="roomType">STANDARD ROOM</div>
+      <div id="price">From:$150/night</div>
       <div>
         With wide and comfortable areas and daylight pouring in from the...
       </div>
@@ -165,17 +167,20 @@
       </div>
       <button class="btn avail border-white mt-4">View Detail</button>
     </div>
-    <!-- <div class="col-md-9">
-      <img class="bed img-fluid" src="./images/bedroom.jpeg" alt="bedroom" />
-    </div> -->
     <div class="swiper mySwiper col-md-7">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img class="imgCarousel" src="./images/bedroom.jpeg" alt="bedroom" /></div>
-        <div class="swiper-slide"><img class="imgCarousel" src="./images/bedroom2.jpeg" alt="bedroom2" /></div>
-        <div class="swiper-slide"><img class="imgCarousel" src="./images/bedroom3.jpeg" alt="bedroom3" /></div>
+        <div class="swiper-slide" id="carousel1" value="c1">
+          <img class="imgCarousel" src="./images/bedroom.jpeg" alt="bedroom" />
+        </div>
+        <div class="swiper-slide" id="carousel2" value="c2">
+          <img class="imgCarousel" src="./images/bedroom2.jpeg" alt="bedroom2" />
+        </div>
+        <div class="swiper-slide" id="carousel3" value="c3">
+          <img class="imgCarousel" src="./images/bedroom3.jpeg" alt="bedroom3" />
+        </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next" id="nextButton"></div>
+      <div class="swiper-button-prev" id="prevButton"></div>
     </div>
   </section>
   <!-- section 5 features of hotel-->
@@ -247,7 +252,6 @@
           steep mountain cliffs and miles of beautiful beaches drew foreign
           visitors like a magnet.
         </p>
-
         <ul>
           <li>Thermal water with ancient baths</li>
           <li>Turkish bath</li>
@@ -401,7 +405,7 @@
           accumsan sollicitudin vehicula
         </p>
         <div class="d-flex">
-          <img src="./images/plane.svg" alt="" />
+          <img src="./images/plane.svg" alt="plane" />
           <div>
             <p>By plane</p>
             <p>
@@ -411,7 +415,7 @@
           </div>
         </div>
         <div class="d-flex">
-          <img src="./images/bus.svg" alt="" />
+          <img src="./images/bus.svg" alt="bus" />
           <div>
             <p>By bus</p>
             <p>
@@ -421,7 +425,7 @@
           </div>
         </div>
         <div class="d-flex">
-          <img src="./images/car.svg" alt="" />
+          <img src="./images/car.svg" alt="car" />
           <div>
             <p>By car</p>
             <p>
@@ -471,7 +475,7 @@
     <p>STORIES DELIVERED STRAIGHT</p>
     <h3>Get News & Update to Your Inbox</h3>
     <div class="">
-      <input type="email" placeholder="Enter your email address" />
+      <input type="email" class="border" placeholder="Enter your email address" />
       <button class="btn avail">Subscribe</button>
       <p>
         Will be used in accordance with our <a href="#">Privacy Policy</a>

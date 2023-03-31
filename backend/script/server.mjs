@@ -2,7 +2,7 @@ import * as fsPromise from "fs/promises";
 import * as fs from "fs";
 import * as http from 'http';
 
-const port = 8000;
+const port = 8080;
 let file = fs.readFileSync('../data.json', "utf8");
 let database = JSON.parse(file);
 

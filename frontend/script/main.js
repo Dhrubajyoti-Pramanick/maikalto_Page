@@ -18,15 +18,15 @@ async function getServerData() {
     document.getElementById("room").style.backgroundImage = `url(${response.searchRoom.img})`;
 
     //welcomeNote section
-    document.getElementById("welcomeNoteImg1").innerHTML = `<img class="w-75" src='${response.welcomeNote.img1}' alt="bedroomNotFound"/>`
-    document.getElementById("welcomeNoteImg2").innerHTML = `<img class="w-75" src='${response.welcomeNote.img2}' alt="bedroomNotFound"/>`
-    document.getElementById("welcomeNoteImg3").innerHTML = `<img class="w-75" src='${response.welcomeNote.img3}' alt="bedroomNotFound"/>`
+    document.getElementById("welcomeNoteImg1").innerHTML = `<img class="w-100" src='${response.welcomeNote.img1}' alt="bedroomNotFound"/>`
+    document.getElementById("welcomeNoteImg2").innerHTML = `<img class="w-100" src='${response.welcomeNote.img2}' alt="bedroomNotFound"/>`
+    document.getElementById("welcomeNoteImg3").innerHTML = `<img class="w-100" src='${response.welcomeNote.img3}' alt="bedroomNotFound"/>`
 
     //carousel section
     document.getElementById("carousel1").innerHTML = `<img class="imgCarousel" src='${response.carousel.carousel1.img}' alt="bedroomNotFound"/>`
     document.getElementById("carousel2").innerHTML = `<img class="imgCarousel" src='${response.carousel.carousel2.img}' alt="bedroomNotFound"/>`
     document.getElementById("carousel3").innerHTML = `<img class="imgCarousel" src='${response.carousel.carousel3.img}' alt="bedroomNotFound"/>`
-    
+
     // next button carousel
     document.getElementById("nextButton").addEventListener('click', () => {
         console.log(swiper.activeIndex);
@@ -55,6 +55,11 @@ async function getServerData() {
             document.getElementById("price").innerHTML = `${response.carousel.carousel3.price}`;
         }
     })
+    // experience section
+    document.getElementById("wellness").innerHTML = `<img class="img-fluid" src='${response.experience.wellnessImg}' alt="wellness"/>`
+    document.getElementById("giftCard").innerHTML = `<img class="img-fluid" src='${response.experience.giftCardImg}' alt="wellness"/>`
+    document.getElementById("mikaltoShop").innerHTML = `<img class="img-fluid" src='${response.experience.mikaltoShopImg}' alt="wellness"/>`
+    document.getElementById("experience").innerHTML = `<img class="img-fluid" src='${response.experience.experienceImg}' alt="wellness"/>`
 }
 getServerData();
 let form = {
@@ -78,16 +83,16 @@ function formSubmit(event) {
     console.log(form);
 
     fetch("http://localhost:8000/", {
-    method: "POST",
-    headers: {
-      "Content-type": "application/json; charset=UTF-8",
-    },
-    body: JSON.stringify(form),
-  }).then(() => {
-    alert("Form submitted!");
-    document.getElementById("checkIn").value = null;
-    document.getElementById("checkOut").value = null;
-    document.getElementById("adults").value = "0";
-    document.getElementById("children").value = "0";
-  });
+        method: "POST",
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+        },
+        body: JSON.stringify(form),
+    }).then(() => {
+        alert("Form submitted!");
+        document.getElementById("checkIn").value = null;
+        document.getElementById("checkOut").value = null;
+        document.getElementById("adults").value = "0";
+        document.getElementById("children").value = "0";
+    });
 }

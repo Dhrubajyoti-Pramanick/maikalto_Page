@@ -66,8 +66,8 @@
     </div>
   </nav>
   <!-- section 2 searchRoom -->
-  <section class="room-search d-flex flex-column flex-md-row gap-5 mx-4" id="room">
-    <div class="offset-1 col-12 col-md-3 text-white mt-5 pt-5">
+  <section class="room-search d-md-flex gap-5 mx-4 py-4" id="room">
+    <div class="offset-1 col-11 col-md-3 text-white mt-5 pt-5">
       <div class="fs-2" id="vacation">Enjoy your dream vacation</div>
       <div>Quiet and endlessly beautiful hideway</div>
       <div>
@@ -85,11 +85,11 @@
         <div class="d-flex flex-column flex-xl-row pt-4">
           <div class="d-flex flex-column">
             <label for="checkIn">Checkin<sup>*</sup></label>
-            <input type="date" id="checkIn"/>
+            <input type="date" id="checkIn" />
           </div>
           <div class="d-flex flex-column">
             <label for="checkOut">Checkout<sup>*</sup></label>
-            <input type="date" id="checkOut"/>
+            <input type="date" id="checkOut" />
           </div>
         </div>
         <div class="d-flex flex-column pt-4">
@@ -113,13 +113,15 @@
           </select>
         </div>
         <div class="d-flex flex-column mt-3">
-          <button class="avail btn" id="submit" onclick="formSubmit(event)">Check Availability</button>
+          <button class="avail btn" id="submit" onclick="formSubmit(event)">
+            Check Availability
+          </button>
         </div>
       </form>
     </div>
   </section>
   <!-- section 3 welcomeNote-->
-  <section class="mt-5 d-flex flex-column flex-md-row justify-content-between mx-5">
+  <section class="mt-5 d-md-flex justify-content-between mx-5">
     <div class="offset-md-1 col-md-3">
       <div class="lang">WELCOME TO</div>
       <div>The Mikalto Luxury & Comfort Homestay</div>
@@ -134,30 +136,30 @@
       </div>
       <div>MELINDA AMANDA - HOTEL MANAGER</div>
     </div>
-    <div>
-      <div id="welcomeNoteImg1"></div>
-      <div id="welcomeNoteImg2"></div>
-      <div id="welcomeNoteImg3"></div>
+    <div class="welcomeImages">
+      <div class="welcomeImg ps-5" id="welcomeNoteImg1"></div>
+      <div class="welcomeImg" id="welcomeNoteImg2"></div>
+      <div class="welcomeImg" id="welcomeNoteImg3"></div>
     </div>
   </section>
   <!-- section 4 carousel-->
-  <section class="mt-5 d-flex flex-column flex-md-row">
+  <section class="mt-5 d-md-flex">
     <div class="carousel col-md-5 text-white p-5">
-      <div>ELEGANCE AND COMFORT</div>
-      <div id="roomType">STANDARD ROOM</div>
-      <div id="price">From:$150/night</div>
-      <div>
+      <div class="pb-2 rose">ELEGANCE AND COMFORT</div>
+      <div class="fs-3 pb-3" id="roomType">STANDARD ROOM</div>
+      <div class="pb-2" id="price">From:$150/night</div>
+      <div class="pb-3">
         With wide and comfortable areas and daylight pouring in from the...
       </div>
-      <div class="row">
+      <div class="row pb-2">
         <div class="col">Bed:</div>
         <div class="col">Queen Size Bed</div>
       </div>
-      <div class="row">
+      <div class="row pb-2">
         <div class="col">Capacity:</div>
         <div class="col">2 adults, 1 children</div>
       </div>
-      <div class="row">
+      <div class="row pb-2">
         <div class="col">Room size:</div>
         <div class="col">55 sqm</div>
       </div>
@@ -183,15 +185,15 @@
       <div class="swiper-button-prev" id="prevButton"></div>
     </div>
   </section>
-  <!-- section 5 features of hotel-->
-  <section>
+  <!-- section 5 features of hotel (why choose)-->
+  <section class="my-5 pt-5">
     <h2 class="offset-2">Why choose our hostel?</h2>
-    <div class="d-flex justify-content-center flex-column flex-md-row">
+    <div class="d-md-flex justify-content-center ps-md-5">
       <div class="d-flex col-9 offset-1 offset-md-0 col-md-3 flex-row">
         <img src="./images/cuisine.jpg" class="section4Img" alt="cuisine" />
         <div>
           <p class="fs-4">Unique Cuisine</p>
-          <p>
+          <p class="chooseText">
             We use the best ingredients to make special and really tasty
             dishes. Choose what you want to eat everyday. You order at the
             moment
@@ -202,7 +204,7 @@
         <img src="./images/yoga.jpg" class="section4Img" alt="yoga" />
         <div>
           <p class="fs-4">Yoga & Gym</p>
-          <p>
+          <p class="chooseText">
             Sauna and solarium, a fitness corner, bicycles and Mikalto Walking
             poles available. To stay in shape especially on vacation.
           </p>
@@ -212,7 +214,7 @@
         <img src="./images/location.jpg" class="section4Img" alt="house_location" />
         <div>
           <p class="fs-4">Perfect Location</p>
-          <p>
+          <p class="chooseText">
             The hotel is located near some of the most beautiful sandy
             beaches. This is the hotel to book if you plan to spend a great
             deal of time.
@@ -223,11 +225,11 @@
   </section>
   <!-- section 6 other activities-->
   <section>
-    <div class="d-flex avail flex-column flex-md-row">
+    <div class="d-md-flex avail">
       <div class="col-10 offset-1 col-md-6 offset-md-0 p-5">
-        <p>OTHER ACTIVITIES</p>
-        <h2>Give yourself a smile- Smile & Wellness</h2>
-        <p>
+        <p class="rose">OTHER ACTIVITIES</p>
+        <h2 class="pb-3">Give yourself a smile- Smile & Wellness</h2>
+        <p class="pb-3 otherActivityText">
           Proin nec leo vel metus faucibus vehicula. Donec vulputate in magna
           eget egestas. Aliquam ac facilisis ante, sit amet tincidunt ante.
           Fusce dolor sapien, sodales at velit non, lobortis volupate ante.
@@ -240,82 +242,83 @@
         <img class="img-fluid swim" src="./images/swimmingPool.jpeg" alt="swimmingPool" />
       </div>
     </div>
-    <div class="d-flex avail flex-column flex-md-row">
-      <div class="col-10 offset-1 col-md-6 offset-md-0">
+    <div class="d-md-flex avail">
+      <div class="col-10 offset-1 col-md-6 offset-md-0 pt-3 pt-md-0">
         <img class="img-fluid" src="./images/swimmingPool.jpeg" alt="swimmingPool" />
       </div>
-      <div class="col-10 offset-1 col-md-5 offset-md-0 p-5">
-        <p>RECONNECT WITH NATURE</p>
+      <div class="col-10 offset-1 col-md-6 offset-md-0 p-5">
+        <p class="rose">RECONNECT WITH NATURE</p>
         <h2>Experience a truly unforgettable holiday</h2>
-        <p>
+        <p class="otherActivityText">
           The wilderness and authencity of this tiny village nestled between
           steep mountain cliffs and miles of beautiful beaches drew foreign
           visitors like a magnet.
         </p>
-        <ul>
-          <li>Thermal water with ancient baths</li>
-          <li>Turkish bath</li>
-          <li>Turkish sauna</li>
-          <li>Relax and therapy massage</li>
+        <ul class="listStyle">
+          <li><span>Thermal water with ancient baths</span></li>
+          <li><span>Turkish bath</span></li>
+          <li><span>Turkish sauna</span></li>
+          <li><span>Relax and therapy massage</span></li>
         </ul>
         <a href="#" target="_blank" class="btn border-white avail text-decoration-none">Book your stay</a>
       </div>
     </div>
   </section>
   <!-- section 7 experience-->
-  <section>
-    <p class="text-center">EXPERIENCE MATTERS</p>
-    <h2 class="text-center">
+  <section class="mt-5 pt-5">
+    <p class="text-center experience">EXPERIENCE MATTERS</p>
+    <h2 class="text-center pb-4">
       Escape from the World see the experience before you <br />
       feel it. Discover the luxury of Hotel Mikalto
     </h2>
-    <div class="row">
-      <div class="col-10 offset-1 col-md-2 offset-md-2">
-        <img class="img-fluid" src="./images/wellness.jpeg" alt="wellness" />
-        <p>WELLNESS</p>
+    <div class="d-md-flex justify-content-evenly">
+      <div class="col-10 offset-1 col-md-2 offset-md-0">
+        <div id="wellness"></div>
+        <p class="experience">WELLNESS</p>
         <h4>Dedicated to wellness</h4>
         <p>
           Aman's approach to wellness is focused on personalisation, privacy
           and seclusion. Local spa rituals with indigenous ingredients, offer
           a profoundly therapeutic touch, and a gentle sense of discovery.
         </p>
-        <a href="#" target="_blank">Discover more →</a>
+        <a href="#" target="_blank" class="nav-link p-0">Discover more →</a>
       </div>
       <div class="col-10 offset-1 col-md-2 offset-md-0">
-        <img class="img-fluid" src="./images/adventure.jpeg" alt="adventure" />
-        <p>GIFT CARDS</p>
+        <div id="giftCard"></div>
+        <p class="experience">GIFT CARDS</p>
         <h4>The gift of future travel</h4>
         <p>
           Share extraordinary experiences with Aman E-Gift Card - delivered
           instantly and offering memories that last a lifetime.
         </p>
-        <a href="#" target="_blank">Discover more →</a>
+        <a href="#" target="_blank" class="nav-link p-0">Discover more →</a>
       </div>
       <div class="col-10 offset-1 col-md-2 offset-md-0">
-        <img class="img-fluid" src="./images/spa.jpeg" alt="spa" />
-        <p>MIKALTO SHOP</p>
+        <div id="mikaltoShop"></div>
+        <p class="experience">MIKALTO SHOP</p>
         <h4>The spa experience from home</h4>
         <p>
           Skincare and Spa supplements harness powerful natural ingredients to
           provide balance and optimal wellbeing.
         </p>
-        <a href="#" target="_blank">Discover more →</a>
+        <a href="#" target="_blank" class="nav-link p-0">Discover more →</a>
       </div>
       <div class="col-10 offset-1 col-md-2 offset-md-0">
-        <img class="img-fluid" src="./images/travel.jpeg" alt="wellness" />
-        <p>EXPERIENCE</p>
+        <div id="experience"></div>
+
+        <p class="experience">EXPERIENCE</p>
         <h4>Adventures in the Wild</h4>
         <p>
           Skincare and Spa supplements harness powerful natural ingredients to
           provide balance and optimal wellbeing.
         </p>
-        <a href="#" target="_blank">Discover more →</a>
+        <a href="#" target="_blank" class="nav-link p-0">Discover more →</a>
       </div>
     </div>
-    <a href="#" target="_blank" class="btn view offset-3 offset-md-5">View all services</a>
+    <a href="#" target="_blank" class="btn view offset-3 mt-5 offset-md-5">View all services</a>
   </section>
   <!-- section 8 new you-->
-  <section class="sayHello py-5 my-5">
+  <section class="sayHello py-5 mt-5">
     <div class="col-10 offset-1 col-md-3 offset-md-7 bg-white p-5">
       <h3>
         Say hello <br />
@@ -330,13 +333,13 @@
     </div>
   </section>
   <!-- section 9 customer review-->
-  <section class="d-flex flex-column flex-md-row justify-content-center gap-5">
+  <section class="customerReview d-md-flex justify-content-center gap-5 pt-5">
     <div class="col-10 offset-1 col-md-3 offset-md-0">
       <div class="d-flex justify-content-between">
         <div class="d-flex">
           <img class="owl" src="./images/section8_img1.png" alt="lady" />
           <p>
-            Selena Mayer <br />
+            Selena Mayer<br />
             2021-01-10
           </p>
         </div>
@@ -344,7 +347,7 @@
       </div>
       <div>
         <p>Wonderful new year trip</p>
-        <p>
+        <p class="customerReviewText">
           "One of the best hotels I've ever stayed in. The staff are very
           friendly and helpful, they were so helpful it made me feel bad. It
           includes use of the Spa, wonderful, it has a...
@@ -364,7 +367,7 @@
       </div>
       <div>
         <p>Recommended</p>
-        <p>
+        <p class="customerReviewText">
           Great resort, professional staffs". It turns out that you're
           searching for paradise and you have it here, nearby. Thanks for the
           warmth, you are fantastic.
@@ -384,7 +387,7 @@
       </div>
       <div>
         <p>All good</p>
-        <p>
+        <p class="customerReviewText">
           "I love the Resort and its environment. Mikalto is incredibly
           dedicated, knowledgeable and helpful. The finished product was
           beautiful every penny...
@@ -394,12 +397,12 @@
   </section>
   <!-- section 10 map -->
   <section>
-    <div class="row d-flex justify-content-center gap-3">
-      <div class="col-10 offset-1 col-md-5 offset-md-0">
+    <div class="d-md-flex justify-content-center gap-3 my-5 py-5">
+      <div class="col-10 offset-1 col-md-4 offset-md-0">
         <img src="./images/flower.svg" alt="flower" />
-        <p>GETTING HERE</p>
+        <p class="experience">GETTING HERE</p>
         <h3>How to get there?</h3>
-        <p>
+        <p class="mapText">
           Cras vel sapien erat. Proin molestie malesuada sem, nec euismod
           metus luctus in. Aliquam eget nibh quis leo tempor congue. Integer
           accumsan sollicitudin vehicula
@@ -408,7 +411,7 @@
           <img src="./images/plane.svg" alt="plane" />
           <div>
             <p>By plane</p>
-            <p>
+            <p class="mapText">
               Donec ornare orci sit amet laoreet imperdiet. Sed lacus lorem,
               pretium id efficitur eu, laoreet quis urna
             </p>
@@ -418,7 +421,7 @@
           <img src="./images/bus.svg" alt="bus" />
           <div>
             <p>By bus</p>
-            <p>
+            <p class="mapText">
               Ut convallis eleifend arcu, eu tempor enim molestie vel.
               Curabitur interdum ipsum quis metus aliquam cursus.
             </p>
@@ -428,15 +431,15 @@
           <img src="./images/car.svg" alt="car" />
           <div>
             <p>By car</p>
-            <p>
+            <p class="mapText">
               Proin nec leo vel metus faucibus vehicula. Donec vulputate in
               magna eget egestas. Aliquam ac facilisis ante, sit amet.
             </p>
           </div>
         </div>
-        <a href="#" target="_blank">Discover more →</a>
+        <a href="#" target="_blank" class="nav-link">Discover more →</a>
       </div>
-      <div class="col-10 col-md-6 offset-md-0">
+      <div class="col-10 offset-1 col-md-5 offset-md-0">
         <iframe class="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.043901925615!2d88.42922191494593!3d22.57746128518026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1679986214593!5m2!1sen!2sin"
           width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
@@ -445,10 +448,10 @@
     </div>
   </section>
   <!-- section 11 spa and wellness -->
-  <section>
-    <div class="row">
+  <section class="spaWellness pb-5">
+    <div class="d-md-flex">
       <div class="col-md-6">
-        <div class="d-flex gap-3">
+        <div class="spaWellnessImgDiv d-flex gap-3">
           <img class="bridge col-6" src="./images/wire-bridge.jpeg" alt="bridge" />
           <div class="d-flex flex-column justify-content-between col-5">
             <img class="img-fluid" src="./images/home-jungle.jpeg" alt="homeJungle" />
@@ -456,11 +459,11 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 text-center mt-5 pt-5">
-        <div class="col-7 offset-2">
-          <p>SPA & WELLNESS</p>
+      <div class="col-10 offset-1 col-md-5 offset-md-0 text-center mt-5 pt-5">
+        <div class="col-md-7 offset-md-3">
+          <p class="spa">SPA & WELLNESS</p>
           <h3>Side by Side with Nature</h3>
-          <p>
+          <p class="spaText">
             Find harmony and balance from the inside out and outside in.
             Laborum accusantium libero commodi id officiis itaque esse
             adipisci, necessiatibus asperiores, illo odio.
@@ -472,38 +475,44 @@
   </section>
   <!-- section 12 subscribe to mail -->
   <section class="text-center my-5">
-    <p>STORIES DELIVERED STRAIGHT</p>
+    <p class="subscribe">STORIES DELIVERED STRAIGHT</p>
     <h3>Get News & Update to Your Inbox</h3>
-    <div class="">
+    <div class="subscribeDiv">
       <input type="email" class="border" placeholder="Enter your email address" />
       <button class="btn avail">Subscribe</button>
-      <p>
-        Will be used in accordance with our <a href="#">Privacy Policy</a>
+      <p class="subscribeText">
+        Will be used in accordance with our
+        <a href="#" class="subscribeText">Privacy Policy</a>
       </p>
     </div>
   </section>
   <!-- section 13 footer -->
-  <section class="avail py-5">
-    <div class="row mx-5">
-      <div class="col">
+  <section class="avail py-5 text-center text-md-start">
+    <div class="d-md-flex justify-content-between mx-5">
+      <div class="col-10 offset-1 col-md-2 offset-md-0">
         <h3>MIKALTO</h3>
         <p>HOTELS AND RESORTS</p>
-        <p>
+        <p class="footerText">
           Duis vitae nulla at nisl finibus pharetra. Nunc porttitor sapien
           quis euismod sodales. Nullam in ipsum nibh.
         </p>
         <div>
           Follow us:
-          <a href="#" target="_blank"><img class="socialLogo" src="./images/facebook.svg" alt="facebook" /></a>
-          <a href="#" target="_blank"><img class="socialLogo" src="./images/twitter.svg" alt="twitter" /></a>
-          <a href="#" target="_blank"><img class="socialLogo" src="./images/instagram.svg" alt="instagram" /></a>
-          <a href="#" target="_blank"><img class="socialLogo" src="./images/youtube.svg" alt="youtube" /></a>
-          <a href="#" target="_blank"><img class="socialLogo" src="./images/pinterest.svg" alt="pinterest" /></a>
+          <a href="https://www.facebook.com/" target="_blank"><img class="socialLogo" src="./images/facebook.svg"
+              alt="facebook" /></a>
+          <a href="https://www.twitter.com/" target="_blank"><img class="socialLogo" src="./images/twitter.svg"
+              alt="twitter" /></a>
+          <a href="https://www.instagram.com/" target="_blank"><img class="socialLogo" src="./images/instagram.svg"
+              alt="instagram" /></a>
+          <a href="https://www.youtube.com/" target="_blank"><img class="socialLogo" src="./images/youtube.svg"
+              alt="youtube" /></a>
+          <a href="https://www.pinterest.com/" target="_blank"><img class="socialLogo" src="./images/pinterest.svg"
+              alt="pinterest" /></a>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-2">
         <p>About</p>
-        <ul>
+        <ul class="p-0 footerLink">
           <li><a href="#" target="_blank">About us</a></li>
           <li><a href="#" target="_blank">Careers</a></li>
           <li><a href="#" target="_blank">Contact us</a></li>
@@ -511,9 +520,9 @@
           <li><a href="#" target="_blank">Gift Cards</a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-md-2">
         <p>Services</p>
-        <ul>
+        <ul class="p-0 footerLink">
           <li><a href="#" target="_blank">Spa</a></li>
           <li><a href="#" target="_blank">Experience</a></li>
           <li><a href="#" target="_blank">Weddings</a></li>
@@ -521,9 +530,9 @@
           <li><a href="#" target="_blank">Event</a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-md-2">
         <p>Quick Links</p>
-        <ul>
+        <ul class="p-0 footerLink">
           <li><a href="#" target="_blank">Facilities</a></li>
           <li><a href="#" target="_blank">Accomodation</a></li>
           <li><a href="#" target="_blank">Reservation</a></li>
@@ -531,26 +540,24 @@
           <li><a href="#" target="_blank">Our Restuarant</a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="col-md-2">
         <p>Contact Us</p>
-        <ul>
+        <ul class="p-0 footerLink">
           <li><a href="#" target="_blank">Total free Customer Support</a></li>
           <li>(+123)1500-456-7890</li>
-          <li>
-            <a href="#" target="_blank"><br />Need Live support?</a>
-          </li>
+          <li><br /><a href="#" target="_blank">New Live support?</a></li>
           <li>reservation@mikalto.com</li>
         </ul>
       </div>
     </div>
-    <div class="d-flex justify-content-between border-top border-1 border-white mx-5 mt-3 pt-3">
-      <ul class="d-flex gap-3 p-0">
+    <div class="d-md-flex justify-content-between border-top border-1 border-white mx-5 mt-3 pt-3">
+      <ul class="d-md-flex gap-3 p-0">
         <li>Copyright © 2022 Mikalto JWS.</li>
-        <li>Privacy</li>
+        <li class="ps-md-5">Privacy</li>
         <li>Terms</li>
         <li>Sitemap</li>
       </ul>
-      <div>
+      <div class="pe-3">
         <a href="#" target="_blank"><img class="globe" src="./images/globe.svg" alt="globe" /></a>
         <select name="language" id="language" class="btn avail">
           <option value="english">EN</option>

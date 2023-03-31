@@ -23,7 +23,8 @@ li {
 .nav-items,
 .lang,
 label,
-.covid {
+.covid,
+.nav-link {
     color: #000062;
 }
 
@@ -51,19 +52,71 @@ label,
     background-color: #000062;
 }
 
+.rose {
+    color: #CC3F66;
+}
+
 .visibility {
     display: none;
 }
 
-@media screen and (min-width: 769px) {
-    .visibility {
-        display: block;
-    }
-
-    .menu {
-        display: none !important;
-    }
+.chooseText,
+.mapText,
+.spaText,
+.subscribeText,
+.subscribeDiv input::placeholder {
+    color: rgb(108, 111, 141);
+    font-size: 13px;
 }
+
+.otherActivityText {
+    font-size: 13px;
+}
+
+.listStyle li {
+    list-style: inside;
+    color: #CC3F66;
+}
+
+.listStyle li span {
+    color: white;
+}
+
+.experience,
+.subscribe,
+.spa {
+    font-size: 13px;
+    color: #000062;
+}
+
+.customerReview,
+.spaWellness {
+    background-color: rgb(255, 248, 240);
+}
+
+.customerReviewText {
+    font-size: 13px;
+}
+
+.customerReviewTextBold {
+    font-weight: bolder;
+}
+
+.spaWellnessImgDiv {
+    margin-top: -4rem;
+}
+
+.footerText {
+    font-size: 13px;
+    color: rgb(196, 193, 193);
+}
+
+.footerLink li a {
+    color: gray;
+    text-decoration: none;
+}
+
+
 
 .signature {
     width: 13rem;
@@ -78,9 +131,7 @@ label,
     background-color: #000062;
 }
 
-/* .bed {
-    width: 50%;
-} */
+
 .socialLogo {
     width: 1rem;
 }
@@ -113,7 +164,6 @@ label,
 /* swiper */
 .swiper {
     max-width: 100%;
-    /* height: 100%; */
 }
 
 .swiper-slide {
@@ -131,4 +181,94 @@ label,
     height: 100%;
     object-fit: cover;
 }
+
 /* welcomeNote section */
+
+#welcomeNoteImg1 {
+    max-width: 50%;
+}
+
+#welcomeNoteImg2 {
+    /* position: absolute; */
+    max-width: 44%;
+    margin-top: -13rem;
+    margin-left: 17rem;
+}
+
+#welcomeNoteImg3 {
+    /* position: absolute; */
+    max-width: 40%;
+    margin-top: -10rem;
+    margin-left: 10rem;
+}
+
+@media screen and (min-width: 769px) {
+    .visibility {
+        display: block;
+    }
+
+    .menu {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    #welcomeNoteImg1 {
+        max-width: 60%;
+    }
+
+    #welcomeNoteImg2 {
+        /* position: absolute; */
+        max-width: 54%;
+        margin-top: -11rem;
+        margin-left: 13rem;
+    }
+
+    #welcomeNoteImg3 {
+        /* position: absolute; */
+        max-width: 50%;
+        margin-top: -10rem;
+        margin-left: 7rem;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #welcomeNoteImg1 {
+        max-width: 70%;
+    }
+
+    #welcomeNoteImg2 {
+        /* position: absolute; */
+        max-width: 64%;
+        margin-top: -8rem;
+        margin-left: 8rem;
+    }
+
+    #welcomeNoteImg3 {
+        /* position: absolute; */
+        max-width: 60%;
+        margin-top: -9rem;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width : 430px) {
+    #welcomeNoteImg1 {
+        max-width: 100%;
+        margin-left: -3rem;
+    }
+
+    #welcomeNoteImg2 {
+        /* position: absolute; */
+        max-width: 84%;
+        margin-top: -8rem;
+        margin-left: 3rem;
+    }
+
+    #welcomeNoteImg3 {
+        /* position: absolute; */
+        max-width: 80%;
+        margin-top: -7rem;
+        margin-left: 1rem;
+    }
+}

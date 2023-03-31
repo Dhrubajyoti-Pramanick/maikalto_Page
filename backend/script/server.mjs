@@ -23,11 +23,20 @@ http
             });
             req.on("end", () => {
                 let formdata = Buffer.concat(formData).toString();
-                let getData = async () => {
-                    await fsPromise.appendFile("./formData.txt", formdata);
+                if(req.url === '/form') {
+                    let getData = async () => {
+                        await fsPromise.appendFile("./formData.txt", formdata);
+                    }
+                    getData();
+                } else if(req.url === '/email') {
+                    let getData = async () => {
+                        await fsPromise.appendFile("./emailData.txt", formdata);
+                    }
+                    getData();
                 }
-                getData();
+                
             })
+            
             res.end();
         } catch (err) {
             console.log(err);

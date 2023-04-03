@@ -34,7 +34,7 @@
       <div class="collapse navbar-collapse offset-md-1 offset-lg-2 offset-xl-3" id="navbarTogglerDemo01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-3">
           <li class="nav-item">
-            <a class="nav-item nav-items text-decoration-none" href="#" target="_blank">Home</a>
+            <a class="nav-item nav-items text-decoration-none" href="index.html" target="_blank">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-item nav-items text-decoration-none" href="#" target="_blank">Our Rooms</a>
@@ -121,7 +121,7 @@
     </div>
   </section>
   <!-- section 3 welcomeNote-->
-  <section class="mt-5 d-md-flex justify-content-between mx-5">
+  <section class="mt-5 mb-5 d-md-flex justify-content-between mx-5">
     <div class="offset-md-1 col-md-3">
       <div class="lang">WELCOME TO</div>
       <div>The Mikalto Luxury & Comfort Homestay</div>
@@ -136,7 +136,7 @@
       </div>
       <div>MELINDA AMANDA - HOTEL MANAGER</div>
     </div>
-    <div class="welcomeImages">
+    <div class="welcomeImages position-relative">
       <div class="welcomeImg ps-5" id="welcomeNoteImg1"></div>
       <div class="welcomeImg" id="welcomeNoteImg2"></div>
       <div class="welcomeImg" id="welcomeNoteImg3"></div>
@@ -153,15 +153,15 @@
       </div>
       <div class="row pb-2">
         <div class="col">Bed:</div>
-        <div class="col">Queen Size Bed</div>
+        <div class="col" id="bed">Normal Size Bed</div>
       </div>
       <div class="row pb-2">
         <div class="col">Capacity:</div>
-        <div class="col">2 adults, 1 children</div>
+        <div class="col" id="capacity">2 adults, 0 children</div>
       </div>
       <div class="row pb-2">
         <div class="col">Room size:</div>
-        <div class="col">55 sqm</div>
+        <div class="col" id="roomSize">45 sqm</div>
       </div>
       <div class="row">
         <div class="col">View:</div>
@@ -171,13 +171,13 @@
     </div>
     <div class="swiper mySwiper col-md-7">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" id="carousel1" value="c1">
+        <div class="swiper-slide" id="carousel1">
           <img class="imgCarousel" src="./images/bedroom.jpeg" alt="bedroom" />
         </div>
-        <div class="swiper-slide" id="carousel2" value="c2">
+        <div class="swiper-slide" id="carousel2">
           <img class="imgCarousel" src="./images/bedroom2.jpeg" alt="bedroom2" />
         </div>
-        <div class="swiper-slide" id="carousel3" value="c3">
+        <div class="swiper-slide" id="carousel3">
           <img class="imgCarousel" src="./images/bedroom3.jpeg" alt="bedroom3" />
         </div>
       </div>
@@ -315,7 +315,7 @@
         <a href="#" target="_blank" class="nav-link p-0">Discover more →</a>
       </div>
     </div>
-    <a href="#" target="_blank" class="btn view offset-3 mt-5 offset-md-5">View all services</a>
+    <a href="service.html" target="_blank" class="btn view offset-3 mt-5 offset-md-5">View all services</a>
   </section>
   <!-- section 8 new you-->
   <section class="sayHello py-5 mt-5">
@@ -329,7 +329,7 @@
         eget egestas. Aliquam ac facilisis ante, sit amet tincidunt ante.
         Fusce dolor sapien.
       </p>
-      <a href="#" target="_blank">Discover more →</a>
+      <a href="#" target="_blank" class="nav-link">Discover more →</a>
     </div>
   </section>
   <!-- section 9 customer review-->
@@ -408,7 +408,7 @@
           accumsan sollicitudin vehicula
         </p>
         <div class="d-flex">
-          <img src="./images/plane.svg" alt="plane" />
+          <img class="mapSvg" src="./images/plane.svg" alt="plane" />
           <div>
             <p>By plane</p>
             <p class="mapText">
@@ -418,7 +418,7 @@
           </div>
         </div>
         <div class="d-flex">
-          <img src="./images/bus.svg" alt="bus" />
+          <img class="mapSvg" src="./images/bus.svg" alt="bus" />
           <div>
             <p>By bus</p>
             <p class="mapText">
@@ -428,7 +428,7 @@
           </div>
         </div>
         <div class="d-flex">
-          <img src="./images/car.svg" alt="car" />
+          <img class="mapSvg" src="./images/car.svg" alt="car" />
           <div>
             <p>By car</p>
             <p class="mapText">
@@ -482,7 +482,7 @@
       <button class="btn avail" id="subscribe">Subscribe</button>
       <p class="subscribeText">
         Will be used in accordance with our
-        <a href="#" class="subscribeText">Privacy Policy</a>
+        <a href="#" target="_blank" class="subscribeText">Privacy Policy</a>
       </p>
     </div>
   </section>

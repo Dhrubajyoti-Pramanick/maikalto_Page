@@ -60,6 +60,10 @@ label,
     display: none;
 }
 
+.mapSvg {
+    max-width: 10%;
+}
+
 .chooseText,
 .mapText,
 .spaText,
@@ -115,8 +119,6 @@ label,
     color: gray;
     text-decoration: none;
 }
-
-
 
 .signature {
     width: 13rem;
@@ -187,17 +189,19 @@ label,
 }
 
 #welcomeNoteImg2 {
-    
+    position: absolute;
     max-width: 44%;
-    margin-top: -13rem;
-    margin-left: 17rem;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
 }
 
 #welcomeNoteImg3 {
-    
+    position: absolute;
     max-width: 40%;
-    margin-top: -10rem;
-    margin-left: 10rem;
+    top: 25%;
+    left: 15%;
+    z-index: 2;
 }
 
 @media screen and (min-width: 769px) {
@@ -216,53 +220,16 @@ label,
     }
 
     #welcomeNoteImg2 {
-        
-        max-width: 54%;
-        margin-top: -11rem;
-        margin-left: 13rem;
+
+        max-width: 44%;
+        top: 12%;
+        left: 20%;
     }
 
     #welcomeNoteImg3 {
-        
-        max-width: 50%;
-        margin-top: -10rem;
-        margin-left: 7rem;
-    }
-}
 
-@media screen and (max-width : 600px) {
-    #welcomeNoteImg1 {
-        max-width: 70%;
-    }
-
-    #welcomeNoteImg2 {
-        max-width: 64%;
-        margin-top: -8rem;
-        margin-left: 8rem;
-    }
-
-    #welcomeNoteImg3 {
-        max-width: 60%;
-        margin-top: -9rem;
-        margin-left: 5rem;
-    }
-}
-
-@media screen and (max-width : 430px) {
-    #welcomeNoteImg1 {
-        max-width: 100%;
-        margin-left: -3rem;
-    }
-
-    #welcomeNoteImg2 {
-        max-width: 84%;
-        margin-top: -8rem;
-        margin-left: 3rem;
-    }
-
-    #welcomeNoteImg3 {
-        max-width: 80%;
-        margin-top: -7rem;
-        margin-left: 1rem;
+        max-width: 44%;
+        top: 32%;
+        left: 15%;
     }
 }

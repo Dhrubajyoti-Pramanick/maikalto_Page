@@ -1,0 +1,1 @@
+{"checkIn":"2023-03-01","checkOut":"2023-03-03","adults":"1","children":"2"}{"checkIn":"2023-03-02","checkOut":"2023-03-04","adults":"1","children":"3"}{"checkIn":"2023-04-04","checkOut":"2023-04-13","adults":"1","children":"2"}

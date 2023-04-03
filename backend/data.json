@@ -11,23 +11,36 @@
         "carousel1" : {
             "roomType" : "STANDARD ROOM",
             "price" : "From: $150/night",
-            "img" : "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=800"
+            "img" : "https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "bed" : "Normal Size Bed",
+            "capacity" : "2 adults, 0 children",
+            "roomSize" : "45 sqm"
         },
         "carousel2" : {
             "roomType" : "PREMIUM ROOM",
             "price" : "From: $250/night",
-            "img" : "https://images.pexels.com/photos/90319/pexels-photo-90319.jpeg?auto=compress&cs=tinysrgb&w=800"
+            "img" : "https://images.pexels.com/photos/90319/pexels-photo-90319.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "bed" : "Large Size Bed",
+            "capacity" : "2 adults, 1 children",
+            "roomSize" : "50 sqm"
         },
         "carousel3" : {
             "roomType" : "LUXURY ROOM",
             "price" : "From: $350/night",
-            "img" : "https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&w=800"
+            "img" : "https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "bed" : "Queen Size Bed",
+            "capacity" : "2 adults, 2 children",
+            "roomSize" : "55 sqm"
         }
     },
     "experience" : {
         "wellnessImg" : "https://images.pexels.com/photos/1123256/pexels-photo-1123256.jpeg?auto=compress&cs=tinysrgb&w=800",
         "giftCardImg" : "https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg?auto=compress&cs=tinysrgb&w=800",
         "mikaltoShopImg" : "https://images.pexels.com/photos/3865712/pexels-photo-3865712.jpeg?auto=compress&cs=tinysrgb&w=800",
-        "experienceImg" : "https://images.pexels.com/photos/3212164/pexels-photo-3212164.jpeg?auto=compress&cs=tinysrgb&w=800"
+        "experienceImg" : "https://images.pexels.com/photos/3212164/pexels-photo-3212164.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "shampoo" : "https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "towel" : "https://images.pexels.com/photos/4210371/pexels-photo-4210371.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "brush" : "https://images.pexels.com/photos/4210341/pexels-photo-4210341.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "incense" : "https://images.pexels.com/photos/5760944/pexels-photo-5760944.jpeg?auto=compress&cs=tinysrgb&w=800"
     }
 }
